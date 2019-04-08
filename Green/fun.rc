@@ -1,0 +1,213 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+#ifdef IDC_STATIC
+#undef IDC_STATIC
+#endif
+#define IDC_STATIC      (-1)
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ICON                    ICON    DISCARDABLE     "fun.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+CURSOR                  CURSOR  DISCARDABLE     "arrow.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+TEXTSCURSOR             BITMAP  DISCARDABLE     "TextsCursor.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_HOSTSESSION DIALOG DISCARDABLE  0, 0, 186, 81
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create Session"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SESSION,45,11,120,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLAYER,45,25,120,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PORT,137,39,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,26,60,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,73,60,40,14
+    LTEXT           "Session:",IDC_STATIC,14,13,28,8
+    LTEXT           "Player:",IDC_STATIC,14,27,22,8
+    LTEXT           "Port:",IDC_STATIC,117,40,16,8
+    PUSHBUTTON      "Exit Game",IDC_EXIT,120,60,40,14
+END
+
+IDD_JOINSESSION DIALOG DISCARDABLE  0, 0, 186, 79
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Join Session"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SESSION,45,11,120,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLAYER,45,25,120,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PORT,137,39,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,24,58,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,73,58,40,14
+    LTEXT           "Host:",IDC_STATIC,14,13,18,8
+    LTEXT           "Player:",IDC_STATIC,14,27,22,8
+    LTEXT           "Port:",IDC_STATIC,117,40,16,8
+    PUSHBUTTON      "Exit Game",IDC_EXIT,121,58,40,14
+END
+
+IDD_NETWORKOPTION DIALOG DISCARDABLE  0, 0, 185, 71
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Network Option"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Create New Session",MB_OPTION1,7,50,78,14
+    PUSHBUTTON      "Join Session",MB_OPTION2,100,50,78,14
+    LTEXT           "This level requires a network session.",IDC_STATIC,34,
+                    13,118,8
+    LTEXT           "What do you want to do?",IDC_STATIC,34,30,81,8
+END
+
+IDD_SELECTPLAYER DIALOG DISCARDABLE  0, 0, 132, 132
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select a Player"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,20,111,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,71,111,40,14
+    LISTBOX         IDC_LIST,7,22,118,82,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Select a player from the list below:",IDC_STATIC,9,10,
+                    108,8
+END
+
+IDD_WAIT DIALOG DISCARDABLE  0, 0, 145, 49
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Resign",IDCANCEL,47,28,50,14
+    LTEXT           "Waiting for other players to join ...",IDC_STATIC,20,10,
+                    106,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_HOSTSESSION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_JOINSESSION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_NETWORKOPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_SELECTPLAYER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_WAIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

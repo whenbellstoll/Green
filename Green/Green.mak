@@ -32,8 +32,8 @@ DEBUGLIBPATH =
 RELEASELIBPATH = 
 USERDEFINES = WIN32;_WINDOWS;_WIN32_WINNT=0x0400;INITGUID;NDEBUG;FUNCORE
 SYSDEFINES = STRICT;_STRICT;_NO_VCL
-INCLUDEPATH = "C:\Game Projects\Green";$(BCB)\include;"C:\Program Files (x86)\DigiPen\FunEditor1.5\Library\FunInclude"
-LIBPATH = "C:\Game Projects\Green";$(BCB)\lib;$(BCB)\Lib\Psdk;"C:\Program Files (x86)\DigiPen\FunEditor1.5\Library\FunLibBC"
+INCLUDEPATH = "C:\Game Projects\GreenRepo\Green";$(BCB)\include;"C:\Program Files (x86)\DigiPen\FunEditor1.5\Library\FunInclude"
+LIBPATH = "C:\Game Projects\GreenRepo\Green";$(BCB)\lib;$(BCB)\Lib\Psdk;"C:\Program Files (x86)\DigiPen\FunEditor1.5\Library\FunLibBC"
 WARNINGS= -w-par
 PATHCPP = .;
 PATHASM = .;

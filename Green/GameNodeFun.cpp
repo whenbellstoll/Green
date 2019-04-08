@@ -129,13 +129,13 @@ void Init_GameFunction(GameNode *gn)
 	gn->bNetworked = true;
 	gn->minJoin = 2;
 	gn->maxJoin = 2;
-	GUID g = { 0x9923885, 0xd3ac, 0x4538, { 0xb3, 0x6a, 0x12, 0x7d, 0x6f, 0x41, 0x8c, 0xc0 } };
+	GUID g = { 0x5d1f4483, 0x6185, 0x48ea, { 0xa6, 0xbf, 0x2a, 0x9d, 0x9f, 0xf0, 0x12, 0x77 } };
 	memcpy(&gn->guidGame,&g,sizeof(GUID));
 	gn->defaultPort = 3000;
 	gn->returnLevel = 0;
 
-	gn->WorldWidth(640);
-	gn->WorldHeight(480);
+	gn->WorldWidth(800);
+	gn->WorldHeight(600);
 
 	gn->FPStoMS(60);
 	gn->QuitOnEscape(true);
